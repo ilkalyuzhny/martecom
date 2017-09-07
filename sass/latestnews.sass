@@ -1,0 +1,91 @@
+@import "bourbon"
+@import "vars.sass"
+
+.news-section
+    display: block
+    padding: 100px 0 80px
+    .title-section
+        margin-bottom: 80px
+        display: block
+        position: relative
+        &:after
+            content: ""
+            width: 165px
+            display: block
+            height: 7px
+            margin: 0 auto
+            background: #1abc9c
+            position: absolute
+            bottom: -25px
+            left: 0
+            right: 0
+        h1
+            text-align: center
+            color: #515151
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+            &:before
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -16px
+                left: 0
+                right: 0
+            &:after
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -30px
+                left: 0
+                right: 0
+    .blog-item
+        img
+            width: 100%
+            height: auto
+        h3
+            display: block
+            margin: 15px 0
+            padding: 0
+            position: relative
+            color: #555252
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            &:before
+                content: ""
+                position: absolute
+                width: 50%
+                height: 3px
+                display: block
+                background: #1abc9c
+                bottom: -8px
+        p
+            display: block
+            margin-top: 12px
+            font-size: 14px
+            font-weight: 40px
+            line-height: 24px
+        a
+            &:last-child
+                display: inline-block
+                color: #fff
+                font-weight: 300
+                background: #1abc9c
+                padding: 10px 30px
+                font-size: 16px
+                border-radius: 3px
+                text-decoration: none
+                transition: all 0.3s
+            &:hover
+                    color: #fff
+                    background: #3cd2b4
+            
