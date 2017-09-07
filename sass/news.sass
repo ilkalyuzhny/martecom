@@ -1,0 +1,98 @@
+@import "bourbon"
+@import "vars.sass"
+
+.news-letter-section
+    display: block
+    padding: 100px 0 80px
+    background: url("../img/bg.png") #1abc9c no-repeat
+    background-size: cover
+    background-attachment: fixed
+    text-align: center
+    .title-section
+        margin-bottom: 30px
+        display: block
+        position: relative
+        &:after
+            content: ""
+            width: 165px
+            display: block
+            height: 7px
+            margin: 0 auto
+            background: #fff
+            position: absolute
+            bottom: -25px
+            left: 0
+            right: 0
+        h1
+            text-align: center
+            color: #515151
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+            &:before
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #fff
+                position: absolute
+                bottom: -16px
+                left: 0
+                right: 0
+            &:after
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #fff
+                position: absolute
+                bottom: -30px
+                left: 0
+                right: 0
+    p
+        color: #fff
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        display: block
+        margin-top: 40px
+        overflow: hidden
+    .subscribe-form
+        display: block
+        margin-top: 30px
+        .form-inline
+            display: block
+            padding: 0
+            position: relative
+            background: #fff
+            border-radius: 5px
+            .form-group
+                display: block
+                width: 100%
+                margin-bottom: 0
+                .form-control
+                    display: block
+                    width: 100% !important
+                    height: 100%
+                    padding: 20px
+                    color: #000
+                    font-size: 16px
+                    &:hover, &:focus
+                        outline: none
+                        box-shadow: none !important
+                .suscribe-btn
+                    display: block
+                    position: absolute
+                    top: 2px
+                    right: 2px
+                    bottom: 2px
+                    width: 100px
+                    padding: 16px
+                    background: #1abc9c
+                    &:hover
+                        background: #3cd2b4
+                    i
+                        color: #fff
+                        font-size: 25px
