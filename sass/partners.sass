@@ -1,0 +1,60 @@
+@import "bourbon"
+@import "vars.sass"
+
+.client-section
+    display: block
+    padding: 100px 0 80px
+    background: #e9f0fd
+    .title-section
+        margin-bottom: 30px
+        display: block
+        position: relative
+        &:after
+            content: ""
+            width: 165px
+            display: block
+            height: 7px
+            margin: 0 auto
+            background: #1abc9c
+            position: absolute
+            bottom: -25px
+            left: 0
+            right: 0
+        h1
+            text-align: center
+            color: #515151
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+            &:before
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -16px
+                left: 0
+                right: 0
+            &:after
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -30px
+                left: 0
+                right: 0
+    .client-area
+        display: block
+        margin: 0 auto
+        margin-top: 40px
+        width: 100%
+        .item
+            img
+                width: 100%
+                height: auto
+                border: 1px solid #1abc9c
