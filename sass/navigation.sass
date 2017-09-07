@@ -1,0 +1,114 @@
+@import "bourbon"
+@import "vars.sass"
+
+.navbar
+    background: #fff
+    padding: 20px 0
+    margin-bottom: 0
+    a
+        -webkit-transition: color 0.125s ease-in-out 0s
+        -moz-transition: color 0.125s ease-in-out 0s
+        -ms-transition: color 0.125s ease-in-out 0s
+        -o-transition: color 0.125s ease-in-out 0s
+        transition: color 0.125s ease-in-out 0s
+    .navbar-custom
+        background-color: rgba(10, 10, 10, .9)
+        border: 0
+        border-radius: 0
+        z-index: 1000
+        font-family: "Roboto Condensed", sans-serif
+        text-transform: uppercase
+        letter-spacing: 3px
+        font-size: 11px
+        -webkit-transition: background, padding 0.4s ease-in-out 0s
+        -moz-transition: background, padding 0.4s ease-in-out 0s
+        -ms-transition: background, padding 0.4s ease-in-out 0s
+        -o-transition: background, padding 0.4s ease-in-out 0s
+        transition: background, padding 0.4s ease-in-out 0s
+    .nav
+        li
+            a
+                position: relative
+                color: #000
+                font-size: 12px
+                font-weight: 700
+                letter-spacing: 1px
+                text-transform: uppercase
+                &:focus
+                    background: none !important
+                    color: #1abc9c
+                &:hover
+                    background: none !important
+                    color: #1abc9c
+    .navbar-nav
+        text-align: center
+                        
+    .navbar-toggle
+        position: relative
+        float: right
+        padding: 9px 10px
+        margin-top: 8px
+        margin-right: 15px
+        margin-bottom: 8px
+        background-color: rgb(26, 188, 156)
+        background-image: none
+        border: 1px solid transparent
+        border-radius: 4px
+        &:hover, &:focus
+            background: #52d0b7
+        .icon-bar
+            background: #fff
+            color: #1abc9c
+    .navbar-brand
+        float: left
+        color: #000
+        height: 50px
+        padding: 15px 15px
+        font-size: 36px
+        font-weight: 100
+        text-transform: uppercase
+        span
+            color: #1abc9c
+            font-weight: 700
+            letter-spacing: 1px
+        &:hover
+            color: #eee
+        
+        .shoping-cart
+            display: inline-block
+            position: relative
+            padding: 2px 7px 2px 6px
+            text-align: center
+            color: #1abc9c
+            background: #fff
+            border: 1px solid #0f0101
+            z-index: 9999999
+            &:after
+                height: 90%
+                width: 80%
+                display: block
+                margin: 0 auto
+                background: transparent
+                border: 1px solid #0f0101
+                border-radius: 50%
+                position: absolute
+                content: ""
+                top: -47%
+                left: 0
+                right: 0
+                z-index: -9999
+                &:hover
+                    &:after
+                        top: -50%
+            &:before
+                height: 100%
+                width: 100%
+                display: block
+                position: absolute
+                content: ""
+                top: 0%
+                left: 0
+                right: 0
+                margin: 0 auto
+                background: #fff
+                z-index: -999

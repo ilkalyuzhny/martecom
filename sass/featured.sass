@@ -1,0 +1,171 @@
+@import "bourbon"
+@import "vars.sass"
+
+.featured-section
+    display: block
+    padding: 100px 0 80px
+    .title-section
+        margin-bottom: 30px
+        display: block
+        position: relative
+        &:after
+            content: ""
+            width: 165px
+            display: block
+            height: 7px
+            margin: 0 auto
+            background: #1abc9c
+            position: absolute
+            bottom: -25px
+            left: 0
+            right: 0
+        h1
+            text-align: center
+            color: #515151
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+            &:before
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -16px
+                left: 0
+                right: 0
+            &:after
+                content: ""
+                width: 165px
+                display: block
+                height: 3px
+                margin: 0 auto
+                background: #1abc9c
+                position: absolute
+                bottom: -30px
+                left: 0
+                right: 0
+            
+    .filter-menu
+        display: block
+        margin: 30px 0 50px
+        text-align: center
+        ul
+            margin: 0 auto
+            list-style-type: none
+            li
+                display: inline-block
+                margin: 5px
+                padding: 5px 15px
+                position: relative
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+                border: 1px solid #000
+                border-radius: 3px
+                cursor: pointer
+                transition: all 0.3s
+                &:hover, &:active
+                    color: #fff
+                    background: #1abc9c
+                    border: 1px solid #1abc9c
+                span
+                    position: absolute
+                    width: 30px
+                    height: 30px;
+                    background: #fff
+                    color: #1abc9c
+                    font-weight: 700
+                    display: block
+                    padding: 5px
+                    border: 1px solid #000
+                    border-radius: 50%
+                    top: -55px
+                    right: -20px
+                    opacity: 0
+                    transition: all 0.5s
+
+.featured
+    .product-item
+        margin-top: 30px
+        position: relative
+        background: #e9f0fd
+        transition: all 0.5s
+        img
+            width: 100%
+            height: auto
+        .product-hover
+            display: block
+            width: 100%
+            height: calc(100% - 40px)
+            background: rgba(0,0,0,.5)
+            border: 10px solid rgba(255, 255, 255, 0.55)
+            position: absolute
+            top: 0
+            text-align: center
+            opacity: 0
+            transform: scale(.1,.1)
+            transition: all 0.5s
+            .product-meta
+                display: block
+                margin-top: 35%
+                a
+                    display: inline-block
+                    padding: 4.2%
+                    margin: 5px
+                    color: #fff
+                    font-size: 16px
+                    border: 1px solid #fff
+                    text-decoration: none
+                    &:last-child
+                        display: block
+                        margin: 5px 12%
+                        font-size: 14px
+                        background: #323232
+                        border: 1px solid #fff
+                        text-transform: uppercase
+                    &:last-child i
+                        font-size: 18px
+                        margin-right: 5px
+                    &:hover
+                        background: #1abc9c
+                        border: 1px solid #1abc9c
+                    i
+                        font-size: 26px
+    .product-item:hover .product-hover
+        transform: scale(1,1)
+        opacity: 1
+        
+    .product-title
+        display: block
+        width: 100%
+        height: 40px
+        background: #323232
+        position: absolute
+        bottom: 0
+        overflow: hidden
+        transition: all 0.5s
+        h3
+            margin: 0
+            padding: 10px
+            padding-left: 15px
+            float: left
+            text-align: center
+            color: #fff
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+        span
+            display: block
+            float: right
+            padding: 6px 15px
+            text-align: left
+            color: #fff
+            background: rgba(255,255,255,.3)
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+    .product-item:hover .product-title
+        background:#1abc9c
